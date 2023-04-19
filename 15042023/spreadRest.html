@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const obj = {name: "Sai", id: "001"};
+        // console.log({...obj});
+
+        // const arr = [1,2,3,4,5]; //arr[0]
+        // console.log({...arr});
+
+
+        // const users = ["Sai", "John", "Rajesh"];
+        // const user = {...users};
+        // console.log(user[2])
+
+        // const a = {
+        //     one: "1",
+        //     two: "2",
+        //     three: "3"
+        // }
+
+        // for(let key in a) {
+        //     console.log(a[key])
+        // }
+
+
+
+        // function myFunction() {
+        //     console.log({...arguments})
+        // }
+
+        // myFunction(1,2,3,4,5)
+        // const date = [2023, 0, 1]
+        // console.log(new Date(...date))
+
+        // const friends = ["Igor", "Jezz"];
+        // const users = ["Igor", ...friends, "Mic"];
+        // console.log('users:', users);
+
+        // const arr = [1,2,3,4,5];
+        // arr.splice(1,1,6);
+        // console.log('arr: ', arr)
+        // const arr1 =[...arr]
+        // arr1.push(6)
+        // console.log("arr1: ", arr1,"arr: ", arr);
+
+
+        const obj = {name: "Sai", id: 001};
+        const obj1 = {newname: "Rajesh", newid: 002}
+       // const newObj = {...obj, ...obj1};
+        // // newObj.location = "Hyd";
+        // console.log(newObj)
+        console.log(Object.assign(obj1, {name: "Sai"}));
+    </script>
+</body>
+</html>

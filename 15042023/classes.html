@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// function UserComponent(name) {
+//     //body
+//     this.name = name
+// }
+// const obj = new UserComponent("Sai")// {name: "Sai"}
+// console.log('obj: ', obj.name)
+// UserComponent.prototype.Friends()
+
+class Friends {
+    //logic
+    constructor(name) {
+        this.name = name;
+    }
+
+    myFriend() {
+        console.log(`My Friend Name: ${this.name}`)
+    }
+}
+
+class UserComponent extends Friends { //classical inheri
+    constructor(name) {
+        super(name)
+    }
+}
+
+const user = new UserComponent("Rajesh");
+user.myFriend();
+
+// const classObj = new UserComponent("Will Smith");
+// console.log('classObj: ', classObj.name);
+    </script>
+</body>
+</html>
