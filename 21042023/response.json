@@ -1,0 +1,5 @@
+{
+    "status": "success",
+    "statusCode": 200,
+    "users": ["Sai", "Smith", "John"]
+}

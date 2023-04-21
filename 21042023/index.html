@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="./nextpage.html" method="post">
+        <input type="text" name="username" placeholder="User Name" />
+        <input type="submit" name="Submit" value="login"/>
+    </form> -->
+
+    <!-- httpRequest
+    xmlHttpRequest -->
+        <marquee> Hello World Example for Marque! </marquee>
+    <button id="btn">
+        Get Data
+    </button>
+
+    <script>
+        //desing patterns
+        const jQuery = {
+            add: function(clsName) {
+               // console.log('Class Name: ', clsName);
+               //logic
+
+                return this;
+            },
+            loop: function() {
+                for(let i = 0; i < 5; i++) {
+                    console.log(i)
+                }
+                //logic
+
+                return this;
+            }
+        }
+
+        jQuery.add("test").loop(); //chain
+
+        // call - 
+
+        // const xmlHttpReq = new XMLHttpRequest();
+
+        // xmlHttpReq.onreadystatechange = function () {
+        //     console.log(xmlHttpReq);
+        // }
+
+        document.getElementById("btn").addEventListener('click', function () {
+            // xmlHttpReq.open("GET", "./response.json");
+            // xmlHttpReq.send()
+
+            fetch("./response.json")
+            .then((res) => res.json())
+            .then((res) => {
+                console.log(res)
+            })
+        });
+
+       
+    </script>
+</body>
+</html>
